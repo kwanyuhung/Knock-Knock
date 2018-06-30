@@ -1,0 +1,269 @@
+2018-06-30 14:12:19,336 [1] INFO  Charon.Program - Started at 'C:\Users\kwan\Desktop\damage' with arguments 'SERVE C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs --port 19859 --watchPid 9992 --lockFile C:\Users\kwan\Desktop\damage\Library\Charon\Charon.lock --environment Unity --extensions None --scriptAssemblies C:\Users\kwan\Desktop\damage\Library\ScriptAssemblies\Assembly-CSharp.dll'.
+2018-06-30 14:12:19,345 [1] INFO  Charon.Program - Product Name: Charon.
+2018-06-30 14:12:19,345 [1] INFO  Charon.Program - Product Version: 2018.2.1.0.
+2018-06-30 14:12:19,345 [1] INFO  Charon.Program - Current Directory: C:\Users\kwan\Desktop\damage.
+2018-06-30 14:12:19,345 [1] INFO  Charon.Program - Application Data Path: C:\Users\kwan\Desktop\damage\Library\Charon\Users\kwan.
+2018-06-30 14:12:19,345 [1] INFO  Charon.Program - Key Storage Path: C:\Users\kwan\Desktop\damage\Library\Charon\Users\kwan\Keys\.
+2018-06-30 14:12:19,345 [1] INFO  Charon.Program - Server Address: https://gamedevware.com/service/api/.
+2018-06-30 14:12:19,345 [1] INFO  Charon.Program - UI Language: .
+2018-06-30 14:12:19,345 [1] INFO  Charon.Program - Allow Prompt: True.
+2018-06-30 14:12:19,401 [1] INFO  Charon.Program - Machine: K
+2018-06-30 14:12:19,401 [1] INFO  Charon.Program - Network MACs: 6476baa13b2a(Wireless80211)
+2018-06-30 14:12:19,401 [1] INFO  Charon.Program - Network IPs: 2602:306:8b09:96b0::3f0
+2018-06-30 14:12:19,401 [1] INFO  Charon.Program - Network DNSs: , attlocal.net
+2018-06-30 14:12:19,401 [1] INFO  Charon.Program - User: kwan
+2018-06-30 14:12:19,401 [1] INFO  Charon.Program - Domain Name: k
+2018-06-30 14:12:19,401 [1] INFO  Charon.Program - Operating System: Microsoft Windows NT 6.2.9200.0
+2018-06-30 14:12:19,401 [1] INFO  Charon.Program - Is 64-bit OS: True
+2018-06-30 14:12:19,401 [1] INFO  Charon.Program - Is 64-bit Process: False
+2018-06-30 14:12:19,401 [1] INFO  Charon.Program - Processor Count: 4
+2018-06-30 14:12:19,401 [1] INFO  Charon.Program - Device Hash: 9daf6a47292d9da43a351d846792594b
+2018-06-30 14:12:19,401 [1] INFO  Charon.Program - Is Mono Runtime: False
+2018-06-30 14:12:19,401 [1] INFO  Charon.Program - CLR Version: 4.0.30319.42000
+2018-06-30 14:12:20,946 [1] DEBUG Pluto.Messaging.Channels.Http.HttpChannel - Listening 'http://localhost:19859/' endpoints, prefixes are 'http://localhost:19859/'.
+2018-06-30 14:12:21,112 [1] INFO  Charon.DataApplication - Route 'MessageChannelPushHandler' with 'channel/{channelId}/{*path}' is registered.
+2018-06-30 14:12:21,112 [1] INFO  Charon.DataApplication - Route 'HttpRoute' with 'ws/{channelId}/{*path}' is registered.
+2018-06-30 14:12:21,112 [1] INFO  Charon.DataApplication - Route 'EmbeddedResourceFileHandler' with 'app/{*path}' is registered.
+2018-06-30 14:12:21,112 [1] INFO  Charon.DataApplication - Route 'HttpRoute' with 'data/documents/{entityName}/{*path}' is registered.
+2018-06-30 14:12:21,112 [1] INFO  Charon.DataApplication - Route 'HttpRoute' with 'data/{controller}/{action}/{*path}' is registered.
+2018-06-30 14:12:21,112 [1] INFO  Charon.DataApplication - Route 'HttpRoute' with 'api/{controller}/{action}.{ext}/{*path}' is registered.
+2018-06-30 14:12:21,112 [1] INFO  Charon.DataApplication - Route 'HttpRoute' with 'api/{controller}/{action}/{*path}' is registered.
+2018-06-30 14:12:21,112 [1] INFO  Charon.DataApplication - Route 'HttpRoute' with 'resources/{action}/{*path}' is registered.
+2018-06-30 14:12:21,112 [1] INFO  Charon.DataApplication - Route 'IndexHtmlHandler' with '{*path}' is registered.
+2018-06-30 14:12:21,205 [1] DEBUG Pluto.Meshing.MeshServer - is constructed.
+2018-06-30 14:12:22,834 [11] INFO  Charon.DataSources.FileDataSource - Transaction (id: 5b371f46cab7e61d60d27fe2, Has Changes: False, Changed Documents: 0) was committed.
+2018-06-30 14:12:53,790 [16] INFO  Charon.DataApplication - Validation failed with following errors:
+[Generic] Document is protected from modification. path: 18d4bf318f3c49688087dbed
+2018-06-30 14:14:09,074 [16] INFO  Charon.DataSources.FileDataSource - A change 'EntityCreate, entity: character' has been applied.
+2018-06-30 14:14:09,102 [16] INFO  Charon.DataSources.FileDataSource - A change 'Create, entity: 18d4bf318f3c49688087dbed, new: character' has been applied.
+2018-06-30 14:14:09,156 [16] INFO  Charon.DataSources.FileDataSource - Saving data to temporary file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'.
+2018-06-30 14:14:09,165 [16] INFO  Charon.DataSources.FileDataSource - Replacing 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs' with file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'.
+2018-06-30 14:14:09,169 [16] INFO  Charon.DataSources.FileDataSource - Transaction (id: 5b371fb1cab7e61d60d27fe4, Has Changes: True, Changed Documents: 1) was committed.
+2018-06-30 14:14:09,170 [23] INFO  Charon.DataSources.FileDataSource - Trying to replace 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs' with file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'. Attempt #1.
+2018-06-30 14:14:09,174 [23] INFO  Charon.DataSources.FileDataSource - Data was successfully saved to 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs'.
+2018-06-30 14:21:07,405 [10] INFO  Charon.DataSources.FileDataSource - A change 'EntityUpdate, entity: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:07,508 [10] INFO  Charon.DataSources.FileDataSource - A change 'EntitySetDescription, entity: 5b371fb1cab7e61d60d27fe6, description: ' has been applied.
+2018-06-30 14:21:07,510 [10] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:07,518 [10] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDisplayName, entity: 5b371fb1cab7e61d60d27fe6, attribute: character, display name: name' has been applied.
+2018-06-30 14:21:07,522 [10] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:07,533 [10] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDescription, entity: 5b371fb1cab7e61d60d27fe6, attribute: Id, description: ' has been applied.
+2018-06-30 14:21:07,541 [10] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:07,541 [10] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDescription, entity: 5b371fb1cab7e61d60d27fe6, attribute: character, description: ' has been applied.
+2018-06-30 14:21:07,541 [10] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:07,541 [10] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: world, add after: name' has been applied.
+2018-06-30 14:21:07,551 [10] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:07,562 [10] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: world' has been applied.
+2018-06-30 14:21:07,581 [10] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:07,586 [10] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: DEF, add after: HP' has been applied.
+2018-06-30 14:21:07,587 [10] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:07,595 [10] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: DEF' has been applied.
+2018-06-30 14:21:07,596 [10] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:07,599 [10] INFO  Charon.DataApplication - Validation failed with following errors:
+[DuplicateUniqueValue] Duplication of unique value '_ID_Attribute_4' of attribute 'Name'. path: 5b371fb1cab7e61d60d27fe6.Attributes
+2018-06-30 14:21:42,871 [33] INFO  Charon.DataSources.FileDataSource - A change 'EntityUpdate, entity: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:42,871 [33] INFO  Charon.DataSources.FileDataSource - A change 'EntitySetDescription, entity: 5b371fb1cab7e61d60d27fe6, description: ' has been applied.
+2018-06-30 14:21:42,872 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:42,872 [33] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDisplayName, entity: 5b371fb1cab7e61d60d27fe6, attribute: character, display name: Name' has been applied.
+2018-06-30 14:21:42,872 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:42,872 [33] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDescription, entity: 5b371fb1cab7e61d60d27fe6, attribute: Id, description: ' has been applied.
+2018-06-30 14:21:42,875 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:42,876 [33] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDescription, entity: 5b371fb1cab7e61d60d27fe6, attribute: character, description: ' has been applied.
+2018-06-30 14:21:42,876 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:42,876 [33] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: world, add after: Name' has been applied.
+2018-06-30 14:21:42,876 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:42,880 [33] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: world' has been applied.
+2018-06-30 14:21:42,881 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:42,884 [33] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: DEF, add after: HP' has been applied.
+2018-06-30 14:21:42,885 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:42,888 [33] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: DEF' has been applied.
+2018-06-30 14:21:42,888 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:21:42,889 [33] INFO  Charon.DataApplication - Validation failed with following errors:
+[DuplicateUniqueValue] Duplication of unique value '_ID_Attribute_4' of attribute 'Name'. path: 5b371fb1cab7e61d60d27fe6.Attributes
+2018-06-30 14:22:10,544 [33] INFO  Charon.DataSources.FileDataSource - A change 'EntityUpdate, entity: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:10,545 [33] INFO  Charon.DataSources.FileDataSource - A change 'EntitySetDescription, entity: 5b371fb1cab7e61d60d27fe6, description: ' has been applied.
+2018-06-30 14:22:10,545 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:10,546 [33] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDisplayName, entity: 5b371fb1cab7e61d60d27fe6, attribute: character, display name: Name' has been applied.
+2018-06-30 14:22:10,546 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:10,546 [33] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDescription, entity: 5b371fb1cab7e61d60d27fe6, attribute: Id, description: ' has been applied.
+2018-06-30 14:22:10,549 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:10,549 [33] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDescription, entity: 5b371fb1cab7e61d60d27fe6, attribute: character, description: ' has been applied.
+2018-06-30 14:22:10,549 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:10,550 [33] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: world, add after: Name' has been applied.
+2018-06-30 14:22:10,552 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:10,556 [33] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: world' has been applied.
+2018-06-30 14:22:10,557 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:10,560 [33] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: DEF, add after: HP' has been applied.
+2018-06-30 14:22:10,561 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:10,567 [33] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: DEF' has been applied.
+2018-06-30 14:22:10,568 [33] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:10,571 [33] INFO  Charon.DataApplication - Validation failed with following errors:
+[DuplicateUniqueValue] Duplication of unique value '_ID_Attribute_4' of attribute 'Name'. path: 5b371fb1cab7e61d60d27fe6.Attributes
+2018-06-30 14:22:22,369 [31] INFO  Charon.DataSources.FileDataSource - A change 'EntityUpdate, entity: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:22,369 [31] INFO  Charon.DataSources.FileDataSource - A change 'EntitySetDescription, entity: 5b371fb1cab7e61d60d27fe6, description: ' has been applied.
+2018-06-30 14:22:22,369 [31] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:22,369 [31] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDescription, entity: 5b371fb1cab7e61d60d27fe6, attribute: Id, description: ' has been applied.
+2018-06-30 14:22:22,369 [31] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:22,370 [31] INFO  Charon.DataSources.FileDataSource - A change 'AttributeRemove, entity: 5b371fb1cab7e61d60d27fe6, attribute to remove: character' has been applied.
+2018-06-30 14:22:22,375 [31] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:22,379 [31] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: world, add after: Id' has been applied.
+2018-06-30 14:22:22,379 [31] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:22,384 [31] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: world' has been applied.
+2018-06-30 14:22:22,384 [31] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:22,391 [31] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: DEF, add after: HP' has been applied.
+2018-06-30 14:22:22,392 [31] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:22,397 [31] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: DEF' has been applied.
+2018-06-30 14:22:22,397 [31] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:22:22,398 [31] INFO  Charon.DataApplication - Validation failed with following errors:
+[DuplicateUniqueValue] Duplication of unique value '_ID_Attribute_4' of attribute 'Name'. path: 5b371fb1cab7e61d60d27fe6.Attributes
+2018-06-30 14:23:10,314 [28] INFO  Charon.DataSources.FileDataSource - A change 'EntityUpdate, entity: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:10,314 [28] INFO  Charon.DataSources.FileDataSource - A change 'EntitySetDescription, entity: 5b371fb1cab7e61d60d27fe6, description: ' has been applied.
+2018-06-30 14:23:10,314 [28] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:10,315 [28] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDescription, entity: 5b371fb1cab7e61d60d27fe6, attribute: Id, description: ' has been applied.
+2018-06-30 14:23:10,315 [28] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:10,315 [28] INFO  Charon.DataSources.FileDataSource - A change 'AttributeRemove, entity: 5b371fb1cab7e61d60d27fe6, attribute to remove: character' has been applied.
+2018-06-30 14:23:10,315 [28] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:10,319 [28] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: world, add after: Id' has been applied.
+2018-06-30 14:23:10,319 [28] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:10,322 [28] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: world' has been applied.
+2018-06-30 14:23:10,322 [28] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:10,327 [28] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: DEF, add after: HP' has been applied.
+2018-06-30 14:23:10,327 [28] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:10,332 [28] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: DEF' has been applied.
+2018-06-30 14:23:10,347 [28] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:10,348 [28] INFO  Charon.DataApplication - Validation failed with following errors:
+[DuplicateUniqueValue] Duplication of unique value '_ID_Attribute_4' of attribute 'Name'. path: 5b371fb1cab7e61d60d27fe6.Attributes
+2018-06-30 14:23:35,883 [28] INFO  Charon.DataSources.FileDataSource - A change 'EntityUpdate, entity: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:35,884 [28] INFO  Charon.DataSources.FileDataSource - A change 'EntitySetDescription, entity: 5b371fb1cab7e61d60d27fe6, description: ' has been applied.
+2018-06-30 14:23:35,884 [28] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:35,884 [28] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDescription, entity: 5b371fb1cab7e61d60d27fe6, attribute: Id, description: ' has been applied.
+2018-06-30 14:23:35,884 [28] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:35,884 [28] INFO  Charon.DataSources.FileDataSource - A change 'AttributeRemove, entity: 5b371fb1cab7e61d60d27fe6, attribute to remove: character' has been applied.
+2018-06-30 14:23:35,885 [28] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:35,887 [28] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: world, add after: Id' has been applied.
+2018-06-30 14:23:35,887 [28] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:35,892 [28] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: world' has been applied.
+2018-06-30 14:23:35,892 [28] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:35,897 [28] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: DEF, add after: HP' has been applied.
+2018-06-30 14:23:35,899 [28] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:35,908 [28] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: DEF' has been applied.
+2018-06-30 14:23:35,909 [28] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:35,910 [28] INFO  Charon.DataApplication - Validation failed with following errors:
+[DuplicateUniqueValue] Duplication of unique value '_ID_Attribute_4' of attribute 'Name'. path: 5b371fb1cab7e61d60d27fe6.Attributes
+2018-06-30 14:23:42,930 [27] INFO  Charon.DataSources.FileDataSource - A change 'EntityUpdate, entity: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:42,930 [27] INFO  Charon.DataSources.FileDataSource - A change 'EntitySetDescription, entity: 5b371fb1cab7e61d60d27fe6, description: ' has been applied.
+2018-06-30 14:23:42,930 [27] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:42,930 [27] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDescription, entity: 5b371fb1cab7e61d60d27fe6, attribute: Id, description: ' has been applied.
+2018-06-30 14:23:42,930 [27] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:42,930 [27] INFO  Charon.DataSources.FileDataSource - A change 'AttributeRemove, entity: 5b371fb1cab7e61d60d27fe6, attribute to remove: character' has been applied.
+2018-06-30 14:23:42,931 [27] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:42,933 [27] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: world, add after: Id' has been applied.
+2018-06-30 14:23:42,934 [27] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:42,938 [27] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: world' has been applied.
+2018-06-30 14:23:42,939 [27] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:42,942 [27] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: DEF, add after: HP' has been applied.
+2018-06-30 14:23:42,943 [27] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:42,945 [27] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: DEF' has been applied.
+2018-06-30 14:23:42,946 [27] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:23:42,947 [27] INFO  Charon.DataApplication - Validation failed with following errors:
+[DuplicateUniqueValue] Duplication of unique value '_ID_Attribute_4' of attribute 'Name'. path: 5b371fb1cab7e61d60d27fe6.Attributes
+2018-06-30 14:25:00,022 [41] INFO  Charon.DataApplication - Validation failed with following errors:
+[Generic] Document is protected from modification. path: 18d4bf318f3c49688087dbed
+2018-06-30 14:25:09,214 [39] INFO  Charon.DataApplication - Validation failed with following errors:
+[Generic] Document is protected from modification. path: 18d4bf318f3c49688087dbed
+2018-06-30 14:54:30,581 [67] INFO  Charon.DataSources.FileDataSource - A change 'EntityUpdate, entity: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:54:30,581 [67] INFO  Charon.DataSources.FileDataSource - A change 'EntitySetDescription, entity: 5b371fb1cab7e61d60d27fe6, description: ' has been applied.
+2018-06-30 14:54:30,581 [67] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:54:30,582 [67] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDisplayName, entity: 5b371fb1cab7e61d60d27fe6, attribute: character, display name: name' has been applied.
+2018-06-30 14:54:30,582 [67] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:54:30,582 [67] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDescription, entity: 5b371fb1cab7e61d60d27fe6, attribute: character, description: ' has been applied.
+2018-06-30 14:54:30,585 [67] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:54:30,586 [67] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDefaultValue, entity: 5b371fb1cab7e61d60d27fe6, attribute: character, default value: ' has been applied.
+2018-06-30 14:54:30,589 [67] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:54:30,589 [67] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetName, entity: 5b371fb1cab7e61d60d27fe6, attribute: character, new attribute name: name' has been applied.
+2018-06-30 14:54:30,595 [67] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:54:30,601 [67] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:54:30,601 [67] INFO  Charon.DataSources.FileDataSource - Saving data to temporary file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'.
+2018-06-30 14:54:30,613 [67] INFO  Charon.DataSources.FileDataSource - Replacing 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs' with file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'.
+2018-06-30 14:54:30,613 [67] INFO  Charon.DataSources.FileDataSource - Transaction (id: 5b372926cab7e61d60d2800f, Has Changes: True, Changed Documents: 1) was committed.
+2018-06-30 14:54:30,614 [72] INFO  Charon.DataSources.FileDataSource - Trying to replace 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs' with file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'. Attempt #1.
+2018-06-30 14:54:30,618 [72] INFO  Charon.DataSources.FileDataSource - Data was successfully saved to 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs'.
+2018-06-30 14:55:22,122 [58] INFO  Charon.DataSources.FileDataSource - A change 'EntityUpdate, entity: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:55:22,122 [58] INFO  Charon.DataSources.FileDataSource - A change 'EntitySetDescription, entity: 5b371fb1cab7e61d60d27fe6, description: ' has been applied.
+2018-06-30 14:55:22,122 [58] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:55:22,123 [58] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: TYPE, add after: World' has been applied.
+2018-06-30 14:55:22,123 [58] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:55:22,127 [58] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: World, add after: name' has been applied.
+2018-06-30 14:55:22,127 [58] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:55:22,130 [58] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:55:22,131 [58] INFO  Charon.DataSources.FileDataSource - Saving data to temporary file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'.
+2018-06-30 14:55:22,141 [58] INFO  Charon.DataSources.FileDataSource - Replacing 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs' with file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'.
+2018-06-30 14:55:22,141 [58] INFO  Charon.DataSources.FileDataSource - Transaction (id: 5b37295acab7e61d60d28010, Has Changes: True, Changed Documents: 1) was committed.
+2018-06-30 14:55:22,142 [64] INFO  Charon.DataSources.FileDataSource - Trying to replace 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs' with file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'. Attempt #1.
+2018-06-30 14:55:22,146 [64] INFO  Charon.DataSources.FileDataSource - Data was successfully saved to 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs'.
+2018-06-30 14:55:47,107 [58] INFO  Charon.DataSources.FileDataSource - A change 'EntityUpdate, entity: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:55:47,107 [58] INFO  Charon.DataSources.FileDataSource - A change 'EntitySetDescription, entity: 5b371fb1cab7e61d60d27fe6, description: ' has been applied.
+2018-06-30 14:55:47,107 [58] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:55:47,108 [58] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDisplayName, entity: 5b371fb1cab7e61d60d27fe6, attribute: TYPE, display name: Type' has been applied.
+2018-06-30 14:55:47,108 [58] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:55:47,111 [58] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDescription, entity: 5b371fb1cab7e61d60d27fe6, attribute: TYPE, description: ' has been applied.
+2018-06-30 14:55:47,113 [58] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:55:47,113 [58] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: HP, add after: Type' has been applied.
+2018-06-30 14:55:47,114 [58] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:55:47,117 [58] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetDefaultValue, entity: 5b371fb1cab7e61d60d27fe6, attribute: TYPE, default value: ' has been applied.
+2018-06-30 14:55:47,117 [58] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:55:47,117 [58] INFO  Charon.DataSources.FileDataSource - A change 'AttributeSetName, entity: 5b371fb1cab7e61d60d27fe6, attribute: TYPE, new attribute name: Type' has been applied.
+2018-06-30 14:55:47,118 [58] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:55:47,122 [58] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:55:47,124 [58] INFO  Charon.DataSources.FileDataSource - Saving data to temporary file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'.
+2018-06-30 14:55:47,133 [58] INFO  Charon.DataSources.FileDataSource - Replacing 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs' with file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'.
+2018-06-30 14:55:47,133 [58] INFO  Charon.DataSources.FileDataSource - Transaction (id: 5b372973cab7e61d60d28013, Has Changes: True, Changed Documents: 1) was committed.
+2018-06-30 14:55:47,133 [71] INFO  Charon.DataSources.FileDataSource - Trying to replace 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs' with file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'. Attempt #1.
+2018-06-30 14:55:47,137 [71] INFO  Charon.DataSources.FileDataSource - Data was successfully saved to 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs'.
+2018-06-30 14:56:38,707 [49] INFO  Charon.DataSources.FileDataSource - A change 'EntityUpdate, entity: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:56:38,707 [49] INFO  Charon.DataSources.FileDataSource - A change 'EntitySetDescription, entity: 5b371fb1cab7e61d60d27fe6, description: ' has been applied.
+2018-06-30 14:56:38,707 [49] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:56:38,708 [49] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: ATK, add after: HP' has been applied.
+2018-06-30 14:56:38,709 [49] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:56:38,715 [49] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: DEF, add after: ATK' has been applied.
+2018-06-30 14:56:38,716 [49] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:56:38,718 [49] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: Courage, add after: DEF' has been applied.
+2018-06-30 14:56:38,719 [49] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:56:38,724 [49] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:56:38,726 [49] INFO  Charon.DataSources.FileDataSource - Saving data to temporary file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'.
+2018-06-30 14:56:38,743 [49] INFO  Charon.DataSources.FileDataSource - Replacing 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs' with file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'.
+2018-06-30 14:56:38,744 [49] INFO  Charon.DataSources.FileDataSource - Transaction (id: 5b3729a6cab7e61d60d28015, Has Changes: True, Changed Documents: 1) was committed.
+2018-06-30 14:56:38,744 [40] INFO  Charon.DataSources.FileDataSource - Trying to replace 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs' with file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'. Attempt #1.
+2018-06-30 14:56:38,747 [40] INFO  Charon.DataSources.FileDataSource - Data was successfully saved to 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs'.
+2018-06-30 14:57:47,286 [61] INFO  Charon.DataSources.FileDataSource - A change 'EntityUpdate, entity: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:57:47,286 [61] INFO  Charon.DataSources.FileDataSource - A change 'EntitySetDescription, entity: 5b371fb1cab7e61d60d27fe6, description: ' has been applied.
+2018-06-30 14:57:47,287 [61] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:57:47,287 [61] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: MANA, add after: Courage' has been applied.
+2018-06-30 14:57:47,288 [61] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:57:47,295 [61] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: Minion, add after: MANA' has been applied.
+2018-06-30 14:57:47,296 [61] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:57:47,301 [61] INFO  Charon.DataSources.FileDataSource - A change 'AttributeAdd, entity: 5b371fb1cab7e61d60d27fe6, attribute: Description, add after: Minion' has been applied.
+2018-06-30 14:57:47,302 [61] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:57:47,305 [61] INFO  Charon.DataSources.FileDataSource - A change 'Update, entity: 18d4bf318f3c49688087dbed, id: '5b371fb1cab7e61d60d27fe6', modified: 5b371fb1cab7e61d60d27fe6' has been applied.
+2018-06-30 14:57:47,306 [61] INFO  Charon.DataSources.FileDataSource - Saving data to temporary file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'.
+2018-06-30 14:57:47,322 [61] INFO  Charon.DataSources.FileDataSource - Replacing 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs' with file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'.
+2018-06-30 14:57:47,323 [61] INFO  Charon.DataSources.FileDataSource - Transaction (id: 5b3729ebcab7e61d60d28019, Has Changes: True, Changed Documents: 1) was committed.
+2018-06-30 14:57:47,323 [42] INFO  Charon.DataSources.FileDataSource - Trying to replace 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs' with file 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs.tmp'. Attempt #1.
+2018-06-30 14:57:47,327 [42] INFO  Charon.DataSources.FileDataSource - Data was successfully saved to 'C:\Users\kwan\Desktop\damage\Assets\Editor\GameDevWare.Charon\GameData.gdjs'.
+2018-06-30 15:07:19,456 [39] WARN  Charon.Services.Channel - An error occurred while receiving WebSocket message: The remote party closed the WebSocket connection without completing the close handshake.
+2018-07-01 04:41:13,113 [9] FATAL Charon.Program - System.CannotUnloadAppDomainException: 卸載 AppDomain 時發生錯誤。 (發生例外狀況於 HRESULT: 0x80131015)
+   at System.AppDomain.Unload(AppDomain domain)
+   at Charon.Program.<>c.<Serve>b__17_3(Object state)
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart(Object obj)
+2018-07-01 04:41:13,300 [9] ERROR Charon.Program - An unhandled exception occurred.
+System.CannotUnloadAppDomainException: 卸載 AppDomain 時發生錯誤。 (發生例外狀況於 HRESULT: 0x80131015)
+   at System.AppDomain.Unload(AppDomain domain)
+   at Charon.Program.<>c.<Serve>b__17_3(Object state)
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart(Object obj)

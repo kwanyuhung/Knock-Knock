@@ -1,0 +1,108 @@
+{
+	"extjs": {
+		"home-dashboard": {
+		},
+		"view-Entity": {
+			"columns": [
+				{
+					"id": "Id",
+					"width": 100
+				},
+				{
+					"id": "Name",
+					"width": 106
+				},
+				{
+					"id": "DisplayName",
+					"width": 100
+				},
+				{
+					"id": "Group",
+					"width": 100
+				},
+				{
+					"id": "Description",
+					"width": 100
+				},
+				{
+					"id": "IdGenerator",
+					"width": 100
+				},
+				{
+					"id": "Specifications",
+					"width": 100
+				},
+				{
+					"id": "Attributes",
+					"width": 100
+				}
+			],
+			"storeState": {
+				"sorters": [
+					{
+						"root": "data",
+						"property": "Name",
+						"direction": "DESC"
+					}
+				]
+			}
+		},
+		"view-character": {
+			"columns": [
+				{
+					"id": "Id",
+					"width": 100
+				},
+				{
+					"id": "name",
+					"width": 100
+				},
+				{
+					"id": "World",
+					"width": 100
+				},
+				{
+					"id": "Type",
+					"width": 100
+				},
+				{
+					"id": "HP",
+					"width": 100
+				},
+				{
+					"id": "ATK",
+					"width": 100
+				},
+				{
+					"id": "DEF",
+					"width": 100
+				},
+				{
+					"id": "Courage",
+					"width": 100
+				},
+				{
+					"id": "MANA",
+					"width": 100
+				},
+				{
+					"id": "Minion",
+					"width": 100
+				},
+				{
+					"id": "Description",
+					"width": 100
+				}
+			],
+			"storeState": {
+				"sorters": [
+					{
+						"root": "data",
+						"property": "Minion",
+						"direction": "DESC"
+					}
+				]
+			}
+		}
+	}
+}
