@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DB9D2C14-C067-4AB6-A7BB-E4C7797E0996}</ProjectGuid>
+    <ProjectGuid>{2C22AC15-A31B-7BD2-D2AA-9C0BA47AE86C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,28 +51,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Character.cs" />
-     <Compile Include="Assets\Characterinfo.cs" />
-     <Compile Include="Assets\main.cs" />
-     <Compile Include="Assets\MapGM.cs" />
-     <Compile Include="Assets\Mapinfo.cs" />
-     <Compile Include="Assets\minion.cs" />
-     <Compile Include="Assets\RapidSheetData\Examples\Scripts\RapidSheetDataExample.cs" />
-     <Compile Include="Assets\RapidSheetData\Examples\Scripts\RapidSheetDataExampleView.cs" />
-     <Compile Include="Assets\RapidSheetData\Scripts\IRSDConverter.cs" />
-     <Compile Include="Assets\RapidSheetData\Scripts\IRSDSerializer.cs" />
-     <Compile Include="Assets\RapidSheetData\Scripts\RSDAsset.cs" />
-     <Compile Include="Assets\RapidSheetData\Scripts\RSDFetchRequest.cs" />
-     <Compile Include="Assets\RapidSheetData\Scripts\Thirdparty\LitJson\IJsonWrapper.cs" />
-     <Compile Include="Assets\RapidSheetData\Scripts\Thirdparty\LitJson\JsonData.cs" />
-     <Compile Include="Assets\RapidSheetData\Scripts\Thirdparty\LitJson\JsonException.cs" />
-     <Compile Include="Assets\RapidSheetData\Scripts\Thirdparty\LitJson\JsonMapper.cs" />
-     <Compile Include="Assets\RapidSheetData\Scripts\Thirdparty\LitJson\JsonMockWrapper.cs" />
-     <Compile Include="Assets\RapidSheetData\Scripts\Thirdparty\LitJson\JsonReader.cs" />
-     <Compile Include="Assets\RapidSheetData\Scripts\Thirdparty\LitJson\JsonWriter.cs" />
-     <Compile Include="Assets\RapidSheetData\Scripts\Thirdparty\LitJson\Lexer.cs" />
-     <Compile Include="Assets\RapidSheetData\Scripts\Thirdparty\LitJson\ParserToken.cs" />
-     <Compile Include="Assets\RapidSheetData\Scripts\Thirdparty\MiniJSON\MiniJSON.cs" />
+     <Compile Include="Assets\Code\BattleGM.cs" />
+     <Compile Include="Assets\Code\Chainfo.cs" />
+     <Compile Include="Assets\Code\Character.cs" />
+     <Compile Include="Assets\Code\CharacterGM.cs" />
+     <Compile Include="Assets\Code\EnemInfo.cs" />
+     <Compile Include="Assets\Code\Enemy.cs" />
+     <Compile Include="Assets\Code\GM.cs" />
+     <Compile Include="Assets\Code\main.cs" />
+     <Compile Include="Assets\Code\MapGM.cs" />
+     <Compile Include="Assets\Code\Mapinfo.cs" />
+     <Compile Include="Assets\Code\minion.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -162,9 +151,6 @@
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/kwan/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="GameDevWare.Charon">
- <HintPath>C:/Users/kwan/Desktop/damage/Assets/Editor/GameDevWare.Charon/GameDevWare.Charon.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

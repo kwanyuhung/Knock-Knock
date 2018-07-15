@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/RapidSheetData/Examples/Scenes/RapidSheetData Example Scene.unity
+- path: Assets/ingame.unity
   isLoaded: 1
   isActive: 1

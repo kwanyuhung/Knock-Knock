@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{FC131B76-6972-36A1-49CF-3E2F231CEF63}</ProjectGuid>
+    <ProjectGuid>{F7418DC8-7A1D-5E08-B7F8-04F9F2DB8888}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -121,6 +121,9 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="GameDevWare.Charon">
+ <HintPath>C:/Users/kwan/Documents/GitHub/game-project/Assets/Editor/GameDevWare.Charon/GameDevWare.Charon.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Users/kwan/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
@@ -142,9 +145,6 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/kwan/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
- <Reference Include="GameDevWare.Charon">
- <HintPath>C:/Users/kwan/Desktop/damage/Assets/Editor/GameDevWare.Charon/GameDevWare.Charon.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
@@ -154,7 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{DB9D2C14-C067-4AB6-A7BB-E4C7797E0996}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{2C22AC15-A31B-7BD2-D2AA-9C0BA47AE86C}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
