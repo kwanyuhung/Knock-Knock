@@ -3,3 +3,8 @@
 *.csproj
 *.csproj
 *.csproj
+*.csproj
+*.csproj
+*.csproj
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
