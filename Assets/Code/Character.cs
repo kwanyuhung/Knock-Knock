@@ -64,6 +64,14 @@ public class Character {
 
 	public minion minion;
 
+	public World W{get{ return WORLD;}}
+	public Type T{ get { return TYPE; } }
+	public int LifePoint{get{return HP;}}
+	public int AttacK{get{return ATK;}}
+	public int Defend{get{return DEF;}}
+	public int Courage{get{return COURAGE;}}
+	public int MANACount{get{return MANA;}}
+
 
 	public Character(int ID_, Rarity Rare_ , World WORLD_,Type TYPE_,string Name_, int HP_, int ATK_, int DEF_,int COURAGE_, int MANA_, minion M, string description_)
 	{

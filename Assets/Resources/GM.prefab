@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114486590680309370}
   - component: {fileID: 114101600579055562}
   - component: {fileID: 114645456681188310}
+  - component: {fileID: 114931151924517518}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -53,7 +54,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 144bec757d69ae1469b5fbd1864f44e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OBJ_map: {fileID: 1027913518565776, guid: 41febcbd8c5b43642b23d3ce7d72cb86, type: 2}
+  OBJ_map: {fileID: 0}
   MapBox: {fileID: 0}
   MapRange: 0
   MapList:
@@ -195,8 +196,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MGM: {fileID: 114101600579055562}
+  BGM: {fileID: 114931151924517518}
+  gm: {fileID: 0}
   Camera: {fileID: 0}
   characterlist: []
+  Enemy: []
   OBJ_Character: {fileID: 1541061947301580, guid: cacae8b7463745e4dbf269f463043694,
     type: 2}
   Cha_info: []
+  Ene_info: []
+--- !u!114 &114931151924517518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1237889267617938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d83802db743bd044b8e87fe44a72189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

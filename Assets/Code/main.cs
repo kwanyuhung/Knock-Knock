@@ -9,22 +9,21 @@ public class main : MonoBehaviour {
 	public int MapX= 6;
 	public int MapY= 6;
 
-
-	MapGM Map_GM;
+	public BattleGM BGM;
 
 	void Start () {
 		minion M = new minion (minion.miniontype.ATK, 100);
 
-		a = new Character (0,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 100,20,20,20,10,M,"eat shit");
+		a = new Character (0,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit");
 
-		Enemy B = new Enemy(11,Character.World.Fear,Character.Type.Demon,"Demon",1000,20,20,20,10,M,"real Demono");
+		Enemy B = new Enemy(11,Character.World.Fear,Character.Type.Demon,"Demon",1,1,100,20,1,M,"real Demono");
 
-		//b = new Character (Character.Type.Red,  10, 1, 2,M);
-		//Battle (a, b);
 		this.gameObject.GetComponent<MapGM>().CreateMap(MapX,MapY);
 
 		Addchararcter(a,3,3);
 		Addchararcter (B, 2, 1);
+
+		BGM.Battle (a, B);
 
 	}
 
