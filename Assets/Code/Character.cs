@@ -2,19 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Character {
 
 	public enum Rarity
 	{
-		SSR,
-		SR,
-		R,
-		C,
-		N
+		SSR = 6,
+		SR = 5,
+		R = 4,
+		C = 3,
+		N = 2,
+		NN = 1
 	}
 
 	public enum World
 	{
+		Null,
 		Happiness,
 		Anger,
 		Sorrow,
@@ -24,6 +27,7 @@ public class Character {
 
 	public enum Type 
 	{
+		Null,
 		God,
 		Human,
 		Lizardfolk,
@@ -44,8 +48,11 @@ public class Character {
 	static private Dictionary<Type, Character> characterTypesInfo = null;
 
 
-	public Type TYPE;
+	public int ID;
+
+	public Rarity Rare;
 	public World WORLD;
+	public Type TYPE;
 	public string Name;
 	public int HP;
 	public int ATK;
@@ -57,19 +64,30 @@ public class Character {
 
 	public minion minion;
 
-	public Character(World WORLD_,Type TYPE_,string Name_, int HP_, int ATK_, int DEF_,int COURAGE_, int MANA_, minion M, string description_)
+
+	public Character(int ID_, Rarity Rare_ , World WORLD_,Type TYPE_,string Name_, int HP_, int ATK_, int DEF_,int COURAGE_, int MANA_, minion M, string description_)
 	{
+		ID = ID_;
+		Rare = Rare_;
+
 		WORLD = WORLD_;
 		TYPE = TYPE_;
+
 		Name = Name_;
+
 		HP  = HP_ + (int)Mathf.Round(M.gethp());
 		ATK = ATK_+ (int)Mathf.Round(M.getatk());
 		DEF = DEF_+ (int)Mathf.Round(M.gethp());
+
+
 		COURAGE = COURAGE_;
 		MANA = MANA_;
 
 		Description = description_;
 	}
+		
+
+
 		
 	public Character(Type type)
 	{
@@ -78,4 +96,6 @@ public class Character {
 		DEF = characterTypesInfo[type].DEF;
 	}
 		
+
 }
+
