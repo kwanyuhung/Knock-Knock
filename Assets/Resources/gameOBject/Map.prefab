@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 224116946404130162}
   - component: {fileID: 222065821102360256}
   - component: {fileID: 114778154304557066}
+  - component: {fileID: 114805596008449054}
   m_Layer: 5
   m_Name: character
   m_TagString: Untagged
@@ -226,7 +227,8 @@ MonoBehaviour:
     MANA: 0
     Description: 
   Enemy_E: []
-  gm: {fileID: 1237889267617938, guid: 81b952477577d3141b3da2e33d9488fb, type: 2}
+  gm: {fileID: 0}
+  MGM: {fileID: 0}
   mapX: 0
   mapY: 0
 --- !u!114 &114667491511930140
@@ -308,6 +310,32 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114805596008449054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1560059383879806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c817a564a4c4a5e41ba2e1cc05ab705f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  X: 0
+  Y: 0
+  Myposition: {fileID: 0}
+  me:
+    ID: 0
+    Rare: 0
+    WORLD: 0
+    TYPE: 0
+    Name: 
+    HP: 0
+    ATK: 0
+    DEF: 0
+    COURAGE: 0
+    MANA: 0
+    Description: 
 --- !u!114 &114865042503312662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -388,7 +416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: -50}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224367863465090818

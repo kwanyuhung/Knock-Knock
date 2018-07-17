@@ -314,14 +314,14 @@ RectTransform:
   m_GameObject: {fileID: 479679410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.605213, y: 0.605213, z: 0.605213}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2067093240}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -64, y: 58}
+  m_AnchoredPosition: {x: 0, y: 60}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &479679412
@@ -337,6 +337,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterBox: {fileID: 1253975339681540, guid: 0c514c045863a8e40be68aa8726ef8e4,
     type: 2}
+  Camera: {fileID: 2067093236}
+  CGM: {fileID: 0}
 --- !u!1 &1056581687 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1027913518565776, guid: 41febcbd8c5b43642b23d3ce7d72cb86,
@@ -347,43 +349,6 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224229675551079112, guid: 41febcbd8c5b43642b23d3ce7d72cb86,
     type: 2}
   m_PrefabInternal: {fileID: 1337737723}
---- !u!114 &1056581689 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114455575469017066, guid: 41febcbd8c5b43642b23d3ce7d72cb86,
-    type: 2}
-  m_PrefabInternal: {fileID: 1337737723}
-  m_Script: {fileID: 11500000, guid: 9ec2e152fa2cfac4282323e17d00ef39, type: 3}
---- !u!1 &1092711170 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1560059383879806, guid: 41febcbd8c5b43642b23d3ce7d72cb86,
-    type: 2}
-  m_PrefabInternal: {fileID: 1337737723}
---- !u!114 &1092711174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1092711170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c817a564a4c4a5e41ba2e1cc05ab705f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  X: 0
-  Y: 0
-  Myposition: {fileID: 0}
-  me:
-    ID: 0
-    Rare: 0
-    WORLD: 0
-    TYPE: 0
-    Name: 
-    HP: 0
-    ATK: 0
-    DEF: 0
-    COURAGE: 0
-    MANA: 0
-    Description: 
 --- !u!1001 &1337737723
 Prefab:
   m_ObjectHideFlags: 0
@@ -486,16 +451,11 @@ Prefab:
       propertyPath: gm
       value: 
       objectReference: {fileID: 1696534274}
-    - target: {fileID: 114667491511930140, guid: 41febcbd8c5b43642b23d3ce7d72cb86,
+    - target: {fileID: 114455575469017066, guid: 41febcbd8c5b43642b23d3ce7d72cb86,
         type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: MGM
       value: 
-      objectReference: {fileID: 1056581689}
-    - target: {fileID: 114667491511930140, guid: 41febcbd8c5b43642b23d3ce7d72cb86,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SelectThisMap
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1696534277}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 41febcbd8c5b43642b23d3ce7d72cb86, type: 2}
   m_IsPrefabParent: 0

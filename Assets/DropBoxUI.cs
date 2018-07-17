@@ -9,6 +9,7 @@ public class DropBoxUI : MonoBehaviour {
 
 	public GameObject Camera;
 
+	public CharacterGM CGM;
 
 	public void CreateBox(List<Character> Clist){
 		float range = 40.0f;
@@ -27,5 +28,11 @@ public class DropBoxUI : MonoBehaviour {
 			Img.sprite = icon;
 			countR += range;
 		}
+	}
+
+
+	public void SelectBoxinfo(){
+
+
 	}
 }

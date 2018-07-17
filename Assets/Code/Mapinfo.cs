@@ -10,7 +10,7 @@ public class Mapinfo : MonoBehaviour {
 	public List<Character> Character_C;
 	public List<Enemy> Enemy_E;
 
-	public GameObject gm;
+	public MapGM MGM;
 
 	public int mapX;
 	public int mapY;
@@ -23,6 +23,6 @@ public class Mapinfo : MonoBehaviour {
 	}
 		
 	public void SelectThisMap(){
-		gm.SendMessage ("SelectMap", this.gameObject);
+		MGM.SelectMap (this.gameObject);
 	}
 }
