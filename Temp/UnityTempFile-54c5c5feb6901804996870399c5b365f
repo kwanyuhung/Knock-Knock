@@ -190,6 +190,7 @@ Assets/Code/main.cs
 Assets/Code/MapGM.cs
 Assets/Code/Mapinfo.cs
 Assets/Code/minion.cs
+Assets/DropBoxUI.cs
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.dll"

@@ -8,7 +8,7 @@ public class CharacterGM : MonoBehaviour {
 
 	public MapGM MGM;
 	public BattleGM BGM;
-	public GM gm;
+	public DropBoxUI DBUI;
 
 	public GameObject Camera;
 
@@ -24,7 +24,26 @@ public class CharacterGM : MonoBehaviour {
 	int BeforeY;
 
 
+	public void AddCharacterDropBox(List<Character> c){
+		//test 
+		DBUI.CreateBox (c);
+	}
 
+	public void DropCharacter(){
+
+	}
+		
+	public void Addchararcter(Character C, int x, int y ){
+		Mapinfo map = MGM.getmap (x,y);
+		//AddCharacterDropBox (C);
+		ADDCharacterToMap (C, map);
+	}
+
+	public void Addchararcter(Enemy E, int x, int y ){
+		Mapinfo map = MGM.getmap (x,y);
+		ADDCharacterToMap (E, map);
+	}
+		
 	public void ADDCharacterToMap(Character C_, Mapinfo M){
 		M.Character_C.Add(C_);
 		characterlist.Add (C_);

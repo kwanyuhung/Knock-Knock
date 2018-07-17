@@ -10,13 +10,13 @@ public class GM : MonoBehaviour {
 	{
 		NewTurn, //0
 		BeforeStart,
-		Start,
+		StartTurn,
 		BeforeJump,
 		Jump,
 		AfterJump,
 		SkillTurn,
 		BeforeMove,
-		move,
+		Move,
 		AfterMove,
 		BeforeBattle,
 		Battle,
@@ -42,8 +42,12 @@ public class GM : MonoBehaviour {
 		Lose
 	}
 		
-	public GameState G = GameState.NewTurn;
+	public int GameTurn = 0;
 
+	public int MapX= 6;
+	public int MapY= 6;
+
+	public GameState G = GameState.NewTurn;
 	public GameState Turn {get { return G;}}
 
 	public MapGM MGM;
@@ -51,8 +55,95 @@ public class GM : MonoBehaviour {
 
 	public Text LOG;
 
+	public void SetUp(){
+		minion M = new minion (minion.miniontype.ATK, 100);
+		Character a = new Character (0,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit");
+
+		Character CB = new Character (1,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit");
+		Character CC = new Character (2,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit");
+		Character CD = new Character (3,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit");
+
+		Enemy B = new Enemy(11,Character.World.Fear,Character.Type.Demon,"Demon",1,1,100,20,1,M,"real Demono");
+
+		MGM.CreateMap (MapX, MapY);
+		CGM.Addchararcter (a,3,3);
+		CGM.Addchararcter (B, 2, 1);
+
+
+		List<Character> list = new List<Character> ();
+		list.Add (a);
+		list.Add (CB);
+		list.Add (CC);
+		list.Add (CD);
+		CGM.AddCharacterDropBox (list);
+	}
+
+	public void Start(){
+		SetUp ();
+		UpdateState ();
+	}
+
+
+	public void NewTurn(){
+		UpdateState ();
+	}
+
+	public void BeforeStart(){
+		UpdateState ();
+	}
+
+	public void StartTurn(){
+		UpdateState ();
+	}
+
+	public void BeforeJump(){
+		UpdateState ();
+	}
+
+	public void Jump(){
+		UpdateState ();
+	}
+
+	public void AfterJump(){
+		UpdateState ();
+	}
+
+	public void SkillTurn(){
+		UpdateState ();
+	}
+
+	public void BeforeMove(){
+		UpdateState ();
+	}
+
+	public void Move(){
+		UpdateState ();
+	}
+
+	public void AfterMove(){
+		UpdateState ();
+	}
+
+	public void BeforeBattle(){
+		UpdateState ();
+	}
+
+	public void Battle(){
+		UpdateState ();
+	}
+
+	public void AfterBattle(){
+		UpdateState ();
+	}
+
+	public void EndTurn(){
+		UpdateState ();
+	}
+
+
 	public void UpdateState(){
 		if (G == GameState.NewTurn) {
+			GameTurn += 1;
 			G+=1;
 		}
 
@@ -69,13 +160,15 @@ public class GM : MonoBehaviour {
 		}
 
 		updateText ();
+		GoTurn ();
 	}
 		
 	void updateText(){
 		LOG.text = G.ToString();
 	}
 
-	public void Start(){
-		UpdateState ();
+	void GoTurn(){
+		Debug.Log ("this turn now" + Turn.ToString ());
+		Invoke (Turn.ToString (), 5f);
 	}
 }

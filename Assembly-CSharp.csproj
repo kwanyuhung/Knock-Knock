@@ -62,6 +62,7 @@
      <Compile Include="Assets\Code\MapGM.cs" />
      <Compile Include="Assets\Code\Mapinfo.cs" />
      <Compile Include="Assets\Code\minion.cs" />
+     <Compile Include="Assets\DropBoxUI.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -55,8 +55,8 @@ public class MapGM : MonoBehaviour {
 		foreach (Mapinfo M in MapinList) {
 			if (M != null) {
 				if (M.mapX == map.GetComponent<Mapinfo> ().mapX && M.mapY == map.GetComponent<Mapinfo> ().mapY) {
-					moveTurn (M);
-					this.gameObject.GetComponent<CharacterGM>().move (M);
+					moveTurn (M); // map Move
+					this.gameObject.GetComponent<CharacterGM>().move (M); // character move
 				}
 			}
 		}
