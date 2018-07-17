@@ -7,22 +7,25 @@ public class DropBoxUI : MonoBehaviour {
 
 	public GameObject CharacterBox;
 
+	public GameObject Camera;
 
 
 	public void CreateBox(List<Character> Clist){
-		float Count = 0.0f;	
 		float range = 40.0f;
+
+		float cal = ((Clist.Count * range / 2)-range/2) *-1;
+
+		float countR = cal;
 
 		foreach (Character C in Clist) {
 			string number = C.ID.ToString ();
 			Sprite icon = Resources.Load <Sprite> ("icon/" + number);
-			Vector3 T = new Vector3 (Count, this.transform.position.y, 0.0f);
-			GameObject G = Instantiate (CharacterBox,this.transform);
-			G.transform.position = T;
+			GameObject G = Instantiate (CharacterBox,Camera.transform);
+			G.transform.localPosition = new Vector3 (countR, this.transform.localPosition.y, 0);
 			G.transform.SetParent (this.transform);
 			Image Img = G.GetComponent<Image> ();
 			Img.sprite = icon;
-			Count += range;
+			countR += range;
 		}
 	}
 }
