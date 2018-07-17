@@ -57,3 +57,6 @@ Temp/UnityTempFile-df18ea9695a53f14d951eb83ce413249
 Temp/UnityTempFile-e0bda50b60a08014ca9a5e79059ce8f0
 Temp/UnityTempFile-e41d37e2e99470a46b2e396e328b202f
 Temp/UnityTempFile-e5ca9962c4b5f94479bbd2058ca9fada
+*.backup
+*.stamp
+Library/assetDatabase3
