@@ -18,6 +18,7 @@ public class MapGM : MonoBehaviour {
 	}
 
 	CharacterGM CGM;
+	public GM GGM;
 
 	public GameObject OBJ_map;
 
@@ -49,17 +50,27 @@ public class MapGM : MonoBehaviour {
 		G.GetComponent<Mapinfo> ().Type = RandomColor();
 
 	}
-		
 
-	public void SelectMap(GameObject map){ //action
+	public Mapinfo GetSelectMap(GameObject map){
 		foreach (Mapinfo M in MapinList) {
 			if (M != null) {
 				if (M.mapX == map.GetComponent<Mapinfo> ().mapX && M.mapY == map.GetComponent<Mapinfo> ().mapY) {
-					moveTurn (M); // map Move
-					this.gameObject.GetComponent<CharacterGM>().move (M); // character move
+					return M;
 				}
 			}
 		}
+		return null;
+	}
+
+	public void SelectJump(GameObject map){
+		Mapinfo M = GetSelectMap(map);
+		this.gameObject.GetComponent<CharacterGM> ().ADDCharacterToMap (GGM.Clist[0],M);
+	}
+
+	public void SelectMap (GameObject map){ //action
+		Mapinfo M = GetSelectMap(map);
+		moveTurn (M); // map Move
+		this.gameObject.GetComponent<CharacterGM> ().move (M); // character move
 	}
 
 	public void CreateMap(int mapx, int mapy){

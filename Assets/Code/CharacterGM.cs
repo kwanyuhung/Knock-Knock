@@ -10,7 +10,7 @@ public class CharacterGM : MonoBehaviour {
 	public BattleGM BGM;
 	public DropBoxUI DBUI;
 
-	public GameObject Camera;
+	  public GameObject Camera;
 
 	public List<Character> characterlist = new List<Character>();
 	public List<Enemy> Enemy = new List<Enemy> ();
@@ -22,12 +22,6 @@ public class CharacterGM : MonoBehaviour {
 
 	int BeforeX;
 	int BeforeY;
-
-
-	public void AddCharacterDropBox(List<Character> c){
-		//test 
-		DBUI.CreateBox (c);
-	}
 
 	public void DropCharacter(){
 
@@ -48,6 +42,7 @@ public class CharacterGM : MonoBehaviour {
 		M.Character_C.Add(C_);
 		characterlist.Add (C_);
 		CreateCharacterOnMap (C_, M);
+		updateCharacterBox ();
 	}
 
 	public void ADDCharacterToMap(Enemy E_, Mapinfo M){
@@ -307,5 +302,14 @@ public class CharacterGM : MonoBehaviour {
 		if (M.Enemy_E.Contains (C.me)) {
 			M.Enemy_E.Remove (C.me);
 		}
+	}
+
+	public void AddCharacterDropBox(List<Character> c){
+		//test 
+		DBUI.CreateBox (c);
+	}
+
+	public void updateCharacterBox(){
+		DBUI.updateBox ();
 	}
 }

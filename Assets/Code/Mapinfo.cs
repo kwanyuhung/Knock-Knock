@@ -11,6 +11,7 @@ public class Mapinfo : MonoBehaviour {
 	public List<Enemy> Enemy_E;
 
 	public MapGM MGM;
+	public GM GM;
 
 	public int mapX;
 	public int mapY;
@@ -23,6 +24,11 @@ public class Mapinfo : MonoBehaviour {
 	}
 		
 	public void SelectThisMap(){
-		MGM.SelectMap (this.gameObject);
+		if (GM.Turn == GM.GameState.Jump) {
+			GM.UpdateState ();
+			MGM.SelectJump (this.gameObject);
+		} else if (GM.Turn == GM.GameState.Move) {
+			MGM.SelectMap (this.gameObject);
+		}
 	}
 }

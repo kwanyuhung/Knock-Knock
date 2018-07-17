@@ -55,6 +55,10 @@ public class GM : MonoBehaviour {
 
 	public Text LOG;
 
+	public List<Character> Clist = new List<Character> ();
+
+	public List<Character> GetBoxList {get{return Clist;}}
+
 	public void SetUp(){
 		minion M = new minion (minion.miniontype.ATK, 100);
 		Character a = new Character (0,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit");
@@ -66,16 +70,20 @@ public class GM : MonoBehaviour {
 		Enemy B = new Enemy(11,Character.World.Fear,Character.Type.Demon,"Demon",1,1,100,20,1,M,"real Demono");
 
 		MGM.CreateMap (MapX, MapY);
-		CGM.Addchararcter (a,3,3);
+		//CGM.Addchararcter (a,3,3);
 		CGM.Addchararcter (B, 2, 1);
 
 
-		List<Character> list = new List<Character> ();
-		list.Add (a);
-		list.Add (CB);
-		list.Add (CC);
-		list.Add (CD);
-		CGM.AddCharacterDropBox (list);
+		Clist.Add (a);
+		Clist.Add (CB);
+		Clist.Add (CC);
+		Clist.Add (CD);
+
+		for (int i = 0; i < Clist.Count;i++) {
+			Clist [i].Teamid = i;
+		}
+
+		CGM.AddCharacterDropBox (Clist);
 	}
 
 	public void Start(){
@@ -101,7 +109,7 @@ public class GM : MonoBehaviour {
 	}
 
 	public void Jump(){
-		UpdateState ();
+		
 	}
 
 	public void AfterJump(){
@@ -117,7 +125,7 @@ public class GM : MonoBehaviour {
 	}
 
 	public void Move(){
-		UpdateState ();
+		
 	}
 
 	public void AfterMove(){
@@ -143,8 +151,9 @@ public class GM : MonoBehaviour {
 
 	public void UpdateState(){
 		if (G == GameState.NewTurn) {
-			GameTurn += 1;
+			//GameTurn += 1;
 			G+=1;
+			GameTurn = 4;
 		}
 
 		if (G != GameState.Lose && G != GameState.Win) {
@@ -169,6 +178,6 @@ public class GM : MonoBehaviour {
 
 	void GoTurn(){
 		Debug.Log ("this turn now" + Turn.ToString ());
-		Invoke (Turn.ToString (), 5f);
+		Invoke (Turn.ToString (),1);
 	}
 }

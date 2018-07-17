@@ -72,6 +72,7 @@ public class Character {
 	public int Courage{get{return COURAGE;}}
 	public int MANACount{get{return MANA;}}
 
+	public int Teamid;
 
 	public Character(int ID_, Rarity Rare_ , World WORLD_,Type TYPE_,string Name_, int HP_, int ATK_, int DEF_,int COURAGE_, int MANA_, minion M, string description_)
 	{
