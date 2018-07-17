@@ -10,8 +10,8 @@ public class DropBoxUI : MonoBehaviour {
 
 
 	public void CreateBox(List<Character> Clist){
-		int Count = 0;
-		int range = 50;
+		float Count = 0.0f;	
+		float range = 40.0f;
 
 		foreach (Character C in Clist) {
 			string number = C.ID.ToString ();
