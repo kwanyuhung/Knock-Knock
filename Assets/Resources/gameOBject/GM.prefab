@@ -170,20 +170,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832183372c7bd2d4da4258df1f46488d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  a:
-    ID: 0
-    Rare: 0
-    WORLD: 0
-    TYPE: 0
-    Name: 
-    HP: 0
-    ATK: 0
-    DEF: 0
-    COURAGE: 0
-    MANA: 0
-    Description: 
   MapX: 6
   MapY: 6
+  BGM: {fileID: 0}
+  GM: {fileID: 0}
 --- !u!114 &114645456681188310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -197,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MGM: {fileID: 114101600579055562}
   BGM: {fileID: 114931151924517518}
-  gm: {fileID: 0}
+  DBUI: {fileID: 0}
   Camera: {fileID: 0}
   characterlist: []
   Enemy: []

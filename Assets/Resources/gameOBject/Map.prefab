@@ -104,7 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Character_C:
-    ID: 0
+  - ID: 0
     Rare: 0
     WORLD: 0
     TYPE: 0
@@ -115,6 +115,117 @@ MonoBehaviour:
     COURAGE: 0
     MANA: 0
     Description: 
+  - ID: 0
+    Rare: 0
+    WORLD: 0
+    TYPE: 0
+    Name: 
+    HP: 0
+    ATK: 0
+    DEF: 0
+    COURAGE: 0
+    MANA: 0
+    Description: 
+  - ID: 0
+    Rare: 0
+    WORLD: 0
+    TYPE: 0
+    Name: 
+    HP: 0
+    ATK: 0
+    DEF: 0
+    COURAGE: 0
+    MANA: 0
+    Description: 
+  - ID: 0
+    Rare: 0
+    WORLD: 0
+    TYPE: 0
+    Name: 
+    HP: 0
+    ATK: 0
+    DEF: 0
+    COURAGE: 0
+    MANA: 0
+    Description: 
+  - ID: 0
+    Rare: 0
+    WORLD: 0
+    TYPE: 0
+    Name: 
+    HP: 0
+    ATK: 0
+    DEF: 0
+    COURAGE: 0
+    MANA: 0
+    Description: 
+  - ID: 0
+    Rare: 0
+    WORLD: 0
+    TYPE: 0
+    Name: 
+    HP: 0
+    ATK: 0
+    DEF: 0
+    COURAGE: 0
+    MANA: 0
+    Description: 
+  - ID: 0
+    Rare: 0
+    WORLD: 0
+    TYPE: 0
+    Name: 
+    HP: 0
+    ATK: 0
+    DEF: 0
+    COURAGE: 0
+    MANA: 0
+    Description: 
+  - ID: 0
+    Rare: 0
+    WORLD: 0
+    TYPE: 0
+    Name: 
+    HP: 0
+    ATK: 0
+    DEF: 0
+    COURAGE: 0
+    MANA: 0
+    Description: 
+  - ID: 0
+    Rare: 0
+    WORLD: 0
+    TYPE: 0
+    Name: 
+    HP: 0
+    ATK: 0
+    DEF: 0
+    COURAGE: 0
+    MANA: 0
+    Description: 
+  - ID: 0
+    Rare: 0
+    WORLD: 0
+    TYPE: 0
+    Name: 
+    HP: 0
+    ATK: 0
+    DEF: 0
+    COURAGE: 0
+    MANA: 0
+    Description: 
+  - ID: 0
+    Rare: 0
+    WORLD: 0
+    TYPE: 0
+    Name: 
+    HP: 0
+    ATK: 0
+    DEF: 0
+    COURAGE: 0
+    MANA: 0
+    Description: 
+  Enemy_E: []
   gm: {fileID: 1237889267617938, guid: 81b952477577d3141b3da2e33d9488fb, type: 2}
   mapX: 0
   mapY: 0
