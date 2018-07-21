@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4760394798146188}
-  - component: {fileID: 114486590680309370}
+  - component: {fileID: 114938716496686012}
   - component: {fileID: 114101600579055562}
   - component: {fileID: 114645456681188310}
   - component: {fileID: 114931151924517518}
@@ -54,6 +54,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 144bec757d69ae1469b5fbd1864f44e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GGM: {fileID: 114938716496686012}
   OBJ_map: {fileID: 0}
   MapBox: {fileID: 0}
   MapRange: 0
@@ -157,23 +158,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  MapDataList: []
   maxX: 0
   maxY: 0
---- !u!114 &114486590680309370
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1237889267617938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 832183372c7bd2d4da4258df1f46488d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MapX: 6
-  MapY: 6
-  BGM: {fileID: 0}
-  GM: {fileID: 0}
 --- !u!114 &114645456681188310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -190,7 +177,7 @@ MonoBehaviour:
   DBUI: {fileID: 0}
   Camera: {fileID: 0}
   characterlist: []
-  Enemy: []
+  Enemylist: []
   OBJ_Character: {fileID: 1541061947301580, guid: cacae8b7463745e4dbf269f463043694,
     type: 2}
   Cha_info: []
@@ -206,3 +193,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d83802db743bd044b8e87fe44a72189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BUI: {fileID: 0}
+  CGM: {fileID: 114645456681188310}
+--- !u!114 &114938716496686012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1237889267617938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485e9c64b021cbb469e21e97e8adc2c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameTurn: 0
+  MapX: 6
+  MapY: 6
+  G: 0
+  MGM: {fileID: 114101600579055562}
+  CGM: {fileID: 114645456681188310}
+  BGM: {fileID: 114931151924517518}
+  LOG: {fileID: 0}
+  Clist: []
+  movecount: 3

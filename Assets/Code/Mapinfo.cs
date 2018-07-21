@@ -28,7 +28,13 @@ public class Mapinfo : MonoBehaviour {
 			GM.UpdateState ();
 			MGM.SelectJump (this.gameObject);
 		} else if (GM.Turn == GM.GameState.Move) {
-			MGM.SelectMap (this.gameObject);
+			if (GM.movecount > 0) {
+				MGM.SelectMap (this.gameObject);
+				GM.MoveCountDown ();
+				if (GM.CheckBattle ()) { //check and go battle
+					GM.GoToTurn (GM.GameState.AfterBattle);
+				}
+			}
 		}
 	}
 }

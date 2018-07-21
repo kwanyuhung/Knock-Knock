@@ -10,10 +10,10 @@ public class CharacterGM : MonoBehaviour {
 	public BattleGM BGM;
 	public DropBoxUI DBUI;
 
-	  public GameObject Camera;
+	public GameObject Camera;
 
 	public List<Character> characterlist = new List<Character>();
-	public List<Enemy> Enemy = new List<Enemy> ();
+	public List<Enemy> Enemylist = new List<Enemy> ();
 
 	public GameObject OBJ_Character;
 
@@ -23,9 +23,6 @@ public class CharacterGM : MonoBehaviour {
 	int BeforeX;
 	int BeforeY;
 
-	public void DropCharacter(){
-
-	}
 		
 	public void Addchararcter(Character C, int x, int y ){
 		Mapinfo map = MGM.getmap (x,y);
@@ -37,22 +34,31 @@ public class CharacterGM : MonoBehaviour {
 		Mapinfo map = MGM.getmap (x,y);
 		ADDCharacterToMap (E, map);
 	}
+
+	public void characterJumpReturn(Character C){
+		foreach (Chainfo info in Cha_info) {
+			if (info.me == C) {
+				Mapinfo map = MGM.getmap (info.X,info.Y);
+				map.Character_C.Remove(C);
+				characterlist.Remove (C);
+				info.me = null;
+				info.gameObject.SetActive (false);
+			}
+		}
+	}
 		
 	public void ADDCharacterToMap(Character C_, Mapinfo M){
-		M.Character_C.Add(C_);
-		characterlist.Add (C_);
 		CreateCharacterOnMap (C_, M);
 		updateCharacterBox ();
 	}
 
 	public void ADDCharacterToMap(Enemy E_, Mapinfo M){
-		M.Enemy_E.Add(E_);
-		Enemy.Add (E_);
 		CreateCharacterOnMap (E_, M);
 	}
-
 		
 	public void CreateCharacterOnMap(Character C_, Mapinfo M){
+		M.Character_C.Add(C_);
+		characterlist.Add (C_);
 		string number = C_.ID.ToString();
 		Sprite icon = Resources.Load <Sprite> ("icon/Character_"+number);
 		GameObject G = Instantiate (OBJ_Character, Camera.transform);
@@ -65,6 +71,8 @@ public class CharacterGM : MonoBehaviour {
 	}
 
 	public void CreateCharacterOnMap(Enemy E_, Mapinfo M){
+		M.Enemy_E.Add(E_);
+		Enemylist.Add (E_);
 		string number = E_.ID.ToString();
 		Sprite icon = Resources.Load <Sprite> ("icon/Character_"+number);
 		GameObject G = Instantiate (OBJ_Character, Camera.transform);
@@ -312,4 +320,14 @@ public class CharacterGM : MonoBehaviour {
 	public void updateCharacterBox(){
 		DBUI.updateBox ();
 	}
+
+	public GameObject GetCharacterGameoBject(Enemy E){
+		foreach (EnemInfo info in Ene_info) {
+			if (info.me == E) {
+				return info.gameObject;
+			}
+		}
+		return null;
+	}
+		
 }

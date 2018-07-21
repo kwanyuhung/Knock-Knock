@@ -34,6 +34,8 @@ public class MapGM : MonoBehaviour {
 
 	public Mapinfo[,] Mapdata;
 
+	public List<Mapinfo> MapDataList;
+
 	public int maxX;
 	public int maxY;
 
@@ -98,6 +100,7 @@ public class MapGM : MonoBehaviour {
 			setMapinfo (G,nameX,nameY,MapType.none);
 			MapList[i] = G;
 			MapinList [i] = G.GetComponent<Mapinfo> ();
+			MapDataList.Add(MapinList[i]);
 			if (x < 20*(mapx-1)) {
 				x += 20;
 				nameX += 1;
@@ -192,6 +195,9 @@ public class MapGM : MonoBehaviour {
 		}
 	}
 
+	public List<Mapinfo> GetAllMap(){
+		return MapDataList;
+	}
 
 	public bool CheckisOver(int x , int y){
 		if (x > 6 || x < 0 || y > 6 || x < 0) {
@@ -290,4 +296,5 @@ public class MapGM : MonoBehaviour {
 	public int GetmaxY(){
 		return maxY;
 	}
+		
 }

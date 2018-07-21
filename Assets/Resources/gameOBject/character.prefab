@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 224271285176153540}
   - component: {fileID: 222476095533464930}
   - component: {fileID: 114019669142435574}
-  - component: {fileID: 114153843531307270}
   m_Layer: 5
   m_Name: character
   m_TagString: Untagged
@@ -56,32 +55,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114153843531307270
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1541061947301580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c817a564a4c4a5e41ba2e1cc05ab705f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  X: 0
-  Y: 0
-  Myposition: {fileID: 0}
-  me:
-    ID: 0
-    Rare: 6
-    WORLD: 3
-    TYPE: 1
-    Name: jj
-    HP: 100
-    ATK: 50
-    DEF: 20
-    COURAGE: 20
-    MANA: 10
-    Description: eat shit
 --- !u!222 &222476095533464930
 CanvasRenderer:
   m_ObjectHideFlags: 1

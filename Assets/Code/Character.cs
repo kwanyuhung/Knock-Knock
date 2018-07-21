@@ -47,7 +47,6 @@ public class Character {
 
 	static private Dictionary<Type, Character> characterTypesInfo = null;
 
-
 	public int ID;
 
 	public Rarity Rare;
@@ -93,6 +92,7 @@ public class Character {
 		MANA = MANA_;
 
 		Description = description_;
+
 	}
 		
 

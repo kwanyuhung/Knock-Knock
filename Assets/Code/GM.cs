@@ -52,12 +52,15 @@ public class GM : MonoBehaviour {
 
 	public MapGM MGM;
 	public CharacterGM CGM;
+	public BattleGM BGM;
 
 	public Text LOG;
 
 	public List<Character> Clist = new List<Character> ();
 
 	public List<Character> GetBoxList {get{return Clist;}}
+
+	public int movecount=3;
 
 	public void SetUp(){
 		minion M = new minion (minion.miniontype.ATK, 100);
@@ -67,7 +70,7 @@ public class GM : MonoBehaviour {
 		Character CC = new Character (2,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit");
 		Character CD = new Character (3,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit");
 
-		Enemy B = new Enemy(11,Character.World.Fear,Character.Type.Demon,"Demon",1,1,100,20,1,M,"real Demono");
+		Enemy B = new Enemy(11,Character.World.Fear,Character.Type.Demon,"Demon",1000,1,100,20,1,M,"real Demono");
 
 		MGM.CreateMap (MapX, MapY);
 		//CGM.Addchararcter (a,3,3);
@@ -109,7 +112,7 @@ public class GM : MonoBehaviour {
 	}
 
 	public void Jump(){
-		
+		//
 	}
 
 	public void AfterJump(){
@@ -125,7 +128,7 @@ public class GM : MonoBehaviour {
 	}
 
 	public void Move(){
-		
+		//
 	}
 
 	public void AfterMove(){
@@ -137,14 +140,16 @@ public class GM : MonoBehaviour {
 	}
 
 	public void Battle(){
-		UpdateState ();
+		
 	}
 
 	public void AfterBattle(){
+		
 		UpdateState ();
 	}
 
 	public void EndTurn(){
+		Reset ();
 		UpdateState ();
 	}
 
@@ -157,7 +162,8 @@ public class GM : MonoBehaviour {
 		}
 
 		if (G != GameState.Lose && G != GameState.Win) {
-			if (G == GameState.EndTurn_E) {
+			//if (G == GameState.EndTurn_E) {
+			if (G == GameState.EndTurn) {
 				G = GameState.BeforeStart;
 			} else {
 				G += 1;
@@ -177,7 +183,54 @@ public class GM : MonoBehaviour {
 	}
 
 	void GoTurn(){
-		Debug.Log ("this turn now" + Turn.ToString ());
-		Invoke (Turn.ToString (),1);
+		//Debug.Log ("this turn now" + Turn.ToString ());
+		Invoke (Turn.ToString (),0.5f);
 	}
+
+	public void MoveCountDown(){
+		movecount -= 1;
+		if (movecount == 0) {
+			Debug.Log ("end turn +++");
+			GoToTurn (GameState.AfterBattle);
+		}
+	}
+
+	public void GoToTurn(GameState GT){
+		G = GT;
+		UpdateState ();
+	}
+
+	public bool CheckBattle(){
+		List<Mapinfo> Minfo =  MGM.GetAllMap();
+		bool IsBattle = false;
+
+
+		foreach (Mapinfo MIN in Minfo) {
+			if (MIN.Character_C != null && MIN.Enemy_E != null) {
+				if (MIN.Character_C.Count != 0 && MIN.Enemy_E.Count != 0) {
+					GetBattle (MIN.Character_C, MIN.Enemy_E);
+					IsBattle = true;
+				}
+			}
+		}
+
+		return IsBattle;
+	}
+
+	public void GetBattle(List<Character> Chara,List<Enemy> Enem){
+		for (int i = 0; i < Chara.Count; i++) {
+			for(int j = 0 ; j < Enem.Count;j++){
+				BGM.Battle (Chara [i], Enem [i]);
+			}
+		}
+	}
+
+	public void JumpBack(){
+
+	}
+
+	public void Reset(){
+		movecount = 3;
+	}
+
 }
