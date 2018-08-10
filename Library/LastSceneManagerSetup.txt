@@ -1,4 +1,4 @@
 sceneSetups:
-- path: C:/Users/kwan/Downloads/Floating-Damage-Text-in-Unity-master/Assets/Demo.unity
+- path: Assets/ingame.unity
   isLoaded: 1
   isActive: 1
