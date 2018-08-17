@@ -63,12 +63,18 @@ public class GM : MonoBehaviour {
 	public int movecount=3;
 
 	public void SetUp(){
-		minion M = new minion (minion.miniontype.ATK, 100);
-		Character a = new Character (0,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit");
 
-		Character CB = new Character (1,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit");
-		Character CC = new Character (2,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit");
-		Character CD = new Character (3,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit");
+
+		passiveSkill p = new passiveSkill(passiveSkill.passive.atkUp,30);
+		List<passiveSkill> PL = new List<passiveSkill> ();
+		PL.Add (p);
+
+		minion M = new minion (minion.miniontype.ATK, 100);
+		Character a = new Character (0,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit",PL);
+
+		Character CB = new Character (1,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit",PL);
+		Character CC = new Character (2,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit",PL);
+		Character CD = new Character (3,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit",PL);
 
 		Enemy B = new Enemy(11,Character.World.Fear,Character.Type.Demon,"Demon",1000,1,100,20,1,M,"real Demono");
 

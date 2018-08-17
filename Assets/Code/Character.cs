@@ -59,21 +59,34 @@ public class Character {
 	public int COURAGE;
 	public int MANA;
 
+	public List<passiveSkill> PSkill;
+
 	public string Description;
 
 	public minion minion;
 
 	public World W{get{ return WORLD;}}
 	public Type T{ get { return TYPE; } }
-	public int LifePoint{get{return HP;}}
-	public int AttacK{get{return ATK;}}
-	public int Defend{get{return DEF;}}
+
+
+	public int LifePoint {get{return HP;}}
+	public int AttacK    {get{return ATK;}}
+	public int Defend    {get{return DEF;}}
+
 	public int Courage{get{return COURAGE;}}
 	public int MANACount{get{return MANA;}}
 
 	public int Teamid;
 
-	public Character(int ID_, Rarity Rare_ , World WORLD_,Type TYPE_,string Name_, int HP_, int ATK_, int DEF_,int COURAGE_, int MANA_, minion M, string description_)
+	//passsive buff
+	float hpBuff;
+	float atkBuff;
+	float defbuff;
+
+
+
+
+	public Character(int ID_, Rarity Rare_ , World WORLD_,Type TYPE_,string Name_, int HP_, int ATK_, int DEF_,int COURAGE_, int MANA_, minion M, string description_,List<passiveSkill> PskL)
 	{
 		ID = ID_;
 		Rare = Rare_;
@@ -83,16 +96,18 @@ public class Character {
 
 		Name = Name_;
 
-		HP  = HP_ + (int)Mathf.Round(M.gethp());
-		ATK = ATK_+ (int)Mathf.Round(M.getatk());
-		DEF = DEF_+ (int)Mathf.Round(M.gethp());
+		PSkill = PskL;
+		GetSkillList (PSkill);
+
+		HP  = HP_ + (int)(Mathf.Round(M.gethp())+hpBuff);
+		ATK = ATK_+ (int)(Mathf.Round(M.getatk())+atkBuff);
+		DEF = DEF_+ (int)(Mathf.Round(M.gethp())+defbuff);
 
 
 		COURAGE = COURAGE_;
 		MANA = MANA_;
 
 		Description = description_;
-
 	}
 		
 
@@ -104,7 +119,24 @@ public class Character {
 		ATK = characterTypesInfo[type].ATK;
 		DEF = characterTypesInfo[type].DEF;
 	}
-		
+
+
+	public void GetSkillList(List<passiveSkill> L){
+		foreach (passiveSkill P in L) {
+
+			if (P.Pasive == passiveSkill.passive.atkUp) {
+				atkBuff += P.value;
+			}
+
+			if (P.Pasive == passiveSkill.passive.defUp) {
+				defbuff += P.value;
+			}
+
+			if (P.Pasive == passiveSkill.passive.HpUP) {
+				hpBuff += P.value;
+			}
+		}
+	}
 
 }
 
