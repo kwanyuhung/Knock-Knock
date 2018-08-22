@@ -24,7 +24,7 @@ public class BattleGM : MonoBehaviour {
 
 
 
-	public void Battle(Character atker , Enemy defener){
+public void Battle(Character atker , Enemy defener){
 		float CourA = atker.Courage*0.01f+1;
 		float CourD = defener.Courage*0.01f+1;
 		float CalADmg = atker.AttacK* CourA;
@@ -40,7 +40,7 @@ public class BattleGM : MonoBehaviour {
 		AfterBattle (atker);
 	}
 
-	public void AfterBattle(Character C){
+public void AfterBattle(Character C){
 		CGM.characterJumpReturn (C);
 	}
 

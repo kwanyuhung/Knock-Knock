@@ -79,9 +79,9 @@ public class Character {
 	public int Teamid;
 
 	//passsive buff
-	float hpBuff;
-	float atkBuff;
-	float defbuff;
+	float hpBuff = 0;
+	float atkBuff= 0;
+	float defbuff= 0;
 
 
 

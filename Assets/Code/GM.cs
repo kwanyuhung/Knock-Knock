@@ -76,6 +76,7 @@ public class GM : MonoBehaviour {
 		Character CC = new Character (2,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit",PL);
 		Character CD = new Character (3,Character.Rarity.SSR,Character.World.Sorrow,Character.Type.God,"jj", 1,14,1,30,1,M,"eat shit",PL);
 
+
 		Enemy B = new Enemy(11,Character.World.Fear,Character.Type.Demon,"Demon",1000,1,100,20,1,M,"real Demono");
 
 		MGM.CreateMap (MapX, MapY);
@@ -146,7 +147,16 @@ public class GM : MonoBehaviour {
 	}
 
 	public void Battle(){
-		
+		List<Mapinfo> Minfo =  MGM.GetAllMap();
+
+		foreach (Mapinfo MIN in Minfo) {
+			if (MIN.Character_C != null && MIN.Enemy_E != null) {
+				if (MIN.Character_C.Count != 0 && MIN.Enemy_E.Count != 0) {
+					GetBattle (MIN.Character_C, MIN.Enemy_E);
+				}
+			}
+		}
+		UpdateState ();
 	}
 
 	public void AfterBattle(){
@@ -180,6 +190,7 @@ public class GM : MonoBehaviour {
 			Debug.Log ("game over");
 		}
 
+		print ("this turn " + G);
 		updateText ();
 		GoTurn ();
 	}
@@ -209,17 +220,13 @@ public class GM : MonoBehaviour {
 	public bool CheckBattle(){
 		List<Mapinfo> Minfo =  MGM.GetAllMap();
 		bool IsBattle = false;
-
-
 		foreach (Mapinfo MIN in Minfo) {
 			if (MIN.Character_C != null && MIN.Enemy_E != null) {
 				if (MIN.Character_C.Count != 0 && MIN.Enemy_E.Count != 0) {
-					GetBattle (MIN.Character_C, MIN.Enemy_E);
 					IsBattle = true;
 				}
 			}
 		}
-
 		return IsBattle;
 	}
 

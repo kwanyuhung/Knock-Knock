@@ -51,13 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Code\battle ui\BattleUIGM.cs" />
+     <Compile Include="Assets\Code\battle ui\DropBoxUI.cs" />
      <Compile Include="Assets\Code\BattleGM.cs" />
-     <Compile Include="Assets\Code\BattleUIGM.cs" />
      <Compile Include="Assets\Code\Chainfo.cs" />
      <Compile Include="Assets\Code\Character.cs" />
      <Compile Include="Assets\Code\CharacterGM.cs" />
      <Compile Include="Assets\Code\DamgeEffect.cs" />
-     <Compile Include="Assets\Code\DropBoxUI.cs" />
      <Compile Include="Assets\Code\EnemInfo.cs" />
      <Compile Include="Assets\Code\Enemy.cs" />
      <Compile Include="Assets\Code\GM.cs" />

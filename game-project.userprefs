@@ -1,18 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Character.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\GM.cs">
     <Files>
-      <File FileName="Assets\Code\GM.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\GM.cs" Line="208" Column="18" />
+      <File FileName="Assets\Code\Mapinfo.cs" Line="33" Column="16" />
       <File FileName="Assets\Code\BattleGM.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\CharacterGM.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\MapGM.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Mapinfo.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\MapGM.cs" Line="72" Column="2" />
       <File FileName="Assets\Code\Enemy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Character.cs" Line="60" Column="18" />
+      <File FileName="Assets\Code\Character.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Chainfo.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\EnemInfo.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\passiveSkill.cs" Line="31" Column="52" />
-      <File FileName="Assets\Code\minion.cs" Line="42" Column="2" />
+      <File FileName="Assets\Code\passiveSkill.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\minion.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

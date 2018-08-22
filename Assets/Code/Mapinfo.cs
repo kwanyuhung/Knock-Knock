@@ -31,8 +31,8 @@ public class Mapinfo : MonoBehaviour {
 			if (GM.movecount > 0) {
 				MGM.SelectMap (this.gameObject);
 				GM.MoveCountDown ();
-				if (GM.CheckBattle ()) { //check and go battle
-					GM.GoToTurn (GM.GameState.AfterBattle);
+				if (GM.CheckBattle ()) { //check battle
+					GM.UpdateState();
 				}
 			}
 		}
