@@ -66,6 +66,7 @@
      <Compile Include="Assets\Code\Mapinfo.cs" />
      <Compile Include="Assets\Code\minion.cs" />
      <Compile Include="Assets\Code\passiveSkill.cs" />
+     <Compile Include="Assets\Code\playerside\player.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/kwanyuhung/Desktop/unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
