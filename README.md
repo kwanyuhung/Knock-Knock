@@ -1,6 +1,6 @@
-# game-project
+# knock knock
 
-this is a mini moblie game project "knock knock"
+this is a mini moblie game project.
 
 is a joke of "knock knock who's there"
 
